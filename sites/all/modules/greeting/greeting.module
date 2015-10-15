@@ -1,0 +1,37 @@
+<?php
+
+function greeting_menu() {
+    $items = array();
+    $items['login'] = array(
+        'title' => "Welcome!",
+        'page callback' => 'login',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    $items['logout'] = array(
+        'title' => "Logout Successful!",
+        'page callback' => 'logout',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    return $items;
+}
+
+
+function login() {
+    return '<p>Hello User</p>';
+}
+
+function logout() {
+    return '<p>Goodbye</p>';
+}
+
+
+//redirects
+function greeting_user_login() {
+    $_GET['destination'] = 'login';
+}
+
+function greeting_user_logout() {
+    $_GET['destination'] = 'logout';
+}
