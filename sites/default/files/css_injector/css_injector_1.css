@@ -1,9 +1,5 @@
-/*header {*/
-/*    background-image: url("/Users/Guest/Desktop/drupalMultFalls/sites/img");*/
-/*    background-size: cover;*/
-/*}*/
-
 #header {
     background-color: green;
-    background-image: url("/Users/Guest/Desktop/drupalMultFalls/sites/img");
+    background-image: url("/sites/img/mult_falls_banner2.jpg");
+    background-size: cover;
 }
